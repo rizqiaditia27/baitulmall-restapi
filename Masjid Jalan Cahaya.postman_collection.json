@@ -1,0 +1,588 @@
+{
+	"info": {
+		"_postman_id": "0ad24a54-60cd-4e81-9639-26658d295081",
+		"name": "Masjid Jalan Cahaya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26034054"
+	},
+	"item": [
+		{
+			"name": "Program Amal",
+			"item": [
+				{
+					"name": "Create Amal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_program",
+									"value": "wakaf sumur2",
+									"type": "text"
+								},
+								{
+									"key": "gambar",
+									"type": "file",
+									"src": "/C:/Users/ASUS/Pictures/603c4a4d695ede7eda3c675d_ezgif-2-b6f5a17527d3.jpg",
+									"disabled": true
+								},
+								{
+									"key": "deskripsi",
+									"value": "doadjsaidadiowsudowueioj",
+									"type": "text"
+								},
+								{
+									"key": "tag",
+									"value": "wakaf",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_donasi_dibutuhkan",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_berakhir",
+									"value": "10 agustus",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/amal",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"amal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Amal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/amal",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"amal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1 amal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/amal/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"amal",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update amal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_program",
+									"value": "wakaf sumur",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "asdaowuehawkbeawbejkwahehjk",
+									"type": "text"
+								},
+								{
+									"key": "tag",
+									"value": "wakaf",
+									"type": "text"
+								},
+								{
+									"key": "jumlah_donasi_dibutuhkan",
+									"value": "10000000",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_berakhir",
+									"value": "1 januari",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/amal/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"amal",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete amal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/amal/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"amal",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kategori",
+			"item": [
+				{
+					"name": "Create Kategori",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_kategori",
+									"value": "wakaf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/kategori",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kategori"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Kategori",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/kategori",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kategori"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1 Kategori",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kategori/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kategori",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Kategori",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_kategori",
+									"value": "buka bersama",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/kategori/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kategori",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Kategori",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/kategori/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"kategori",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laporan",
+			"item": [
+				{
+					"name": "Create Laporan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_laporan",
+									"value": "laporan sedekah februari",
+									"type": "text"
+								},
+								{
+									"key": "pdf",
+									"type": "file",
+									"src": "/C:/Users/ASUS/Documents/SEJARAH HUKUM.pdf"
+								},
+								{
+									"key": "deskripsi",
+									"value": "adjwaioeueuaiehai",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/laporan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"laporan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Laporan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|8ylcCgks75i6EVnTPstjO08xVvUCBC8O24Pl8VzT",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/laporan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"laporan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get 1 Laporan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|qcPKT5dhuR5eyjzDzAVUDT8h0A40hN1gV8I2ij8g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/laporan/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"laporan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Laporan",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_laporan",
+									"value": "Laporan bukber",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "siueoiawuewaheajkduiosa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/laporan/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"laporan",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Laporan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/laporan/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"laporan",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "sekar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|FYeqD3VclcV60msGnQLjTfsmWVxDMtWBdc6Cjfg3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "adit",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|8ylcCgks75i6EVnTPstjO08xVvUCBC8O24Pl8VzT",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
